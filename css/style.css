@@ -1,44 +1,141 @@
-body {
+/* Reset */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
-}
-
-header {
-  background-color: #1e1e1e;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  box-sizing: border-box;
 }
 
-nav a {
-  color: #ffffff;
+/* Base */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: #90caf9;
   text-decoration: none;
-  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-main {
-  padding: 40px;
+a:hover,
+a:focus {
+  color: #64b5f6;
+  outline: none;
 }
 
-section {
-  margin-bottom: 40px;
+/* Container */
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
-footer {
-  background-color: #1e1e1e;
-  padding: 20px;
+/* Header */
+.site-header {
+  background-color: #1f1f1f;
+  padding: 1rem 0;
+  border-bottom: 2px solid #333;
+}
+
+.site-header .logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #64b5f6;
+  margin-bottom: 0.5rem;
+}
+
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.site-nav a {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background-color: #64b5f6;
+  color: #121212;
+}
+
+/* Sections */
+.section {
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #333;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #90caf9;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #64b5f6;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+.projects-list {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+}
+
+.projects-list li {
+  margin-bottom: 0.8rem;
+}
+
+.projects-list a {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #1f1f1f;
+  padding: 2rem 0;
+  margin-top: 4rem;
+  border-top: 2px solid #333;
   text-align: center;
+}
+
+.site-footer h2 {
+  color: #90caf9;
+  margin-bottom: 1rem;
+}
+
+.site-footer p {
+  margin-bottom: 0.6rem;
+  font-size: 1rem;
+}
+
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #64b5f6;
+}
+
+.site-footer .copyright {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .site-header .logo {
+    font-size: 1.5rem;
+  }
 }
