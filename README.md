@@ -1,1 +1,0 @@
-# karamanerenn.github.io
