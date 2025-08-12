@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eren Karaman | Mechanical Engineer</title>
+  <meta name="description" content="Dark, modern portfolio with projects, SolidWorks gallery, and blog." />
+  <style>
+    :root{
+      --bg:#0b0f14;--panel:#131922;--text:#e6edf3;--muted:#94a3b8;--accent:#60a5fa;--accent2:#22d3ee;--border:#1f2937
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    /* Header */
+    .site-header{position:sticky;top:0;z-index:10;background:rgba(11,15,20,.7);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
+    .logo{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b0f14;font-weight:800}
+    nav{display:flex;gap:1rem}
+    nav a{padding:.5rem .75rem;border-radius:.65rem}
+    nav a:hover{background:#0f172a}
+    /* Hero */
+    .hero{padding:5rem 0;background:radial-gradient(80% 60% at 50% -10%, #0b1b34 0%, rgba(11,15,20,0) 70%)}
+    .hero h1{font-size:clamp(2rem,4.5vw,3rem);margin:0 0 .5rem}
+    .subtitle{color:var(--muted);max-width:65ch}
+    .cta-row{display:flex;gap:.75rem;margin-top:1rem}
+    .btn{display:inline-block;border:1px solid var(--border);padding:.6rem 1rem;border-radius:.8rem}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b0f14;border:none;font-weight:700}
+    .btn.ghost{background:#0f172a}
+    /* Sections */
+    .section{padding:3rem 0}
+    .grid{display:grid;gap:1.25rem}
+    .two{grid-template-columns:1fr}
+    @media(min-width:840px){.two{grid-template-columns:1.1fr .9fr}}
+    .card{background:var(--panel);border:1px solid var(--border);border-radius:1.2rem;padding:1rem}
+    .muted{color:var(--muted)}
+    /* Footer */
+    footer{border-top:1px solid var(--border);padding:2rem 0;color:var(--muted)}
+    /* Debug badge */
+    .ok{position:fixed;right:12px;bottom:12px;background:#0f172a;border:1px solid var(--border);border-radius:10px;padding:8px 10px;color:#cbd5e1;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">EK</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Hi, I’m <span style="color:var(--accent)">Eren Karaman</span></h1>
+        <p class="subtitle">Mechanical Engineering senior focused on <strong>automation</strong> and <strong>data analysis</strong>. This is the minimal working skeleton. If you can see this, Step 1 is OK.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two grid">
+        <div>
+          <h2>About Me</h2>
+          <p>I like combining mechanical design with automation and data analysis. We’ll expand this page step by step.</p>
+        </div>
+        <div>
+          <div class="card">
+            <h3 style="margin:.2rem 0 .8rem">Currently</h3>
+            <ul style="margin:0 0 0 1.1rem">
+              <li>Learning PLC & industrial data</li>
+              <li>Practicing Python and dashboards</li>
+              <li>Documenting projects on a blog</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="grid two">
+          <div class="card"><strong>Smart Bulletproof Vest</strong><br><span class="muted">Impact localization with conductive matrix + Arduino DAQ.</span></div>
+          <div class="card"><strong>Data Center Heat Recovery</strong><br><span class="muted">Plate heat exchanger – thermal design & analysis.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">We’ll wire a working form later. For now, this is a placeholder.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Eren Karaman. All rights reserved.</div>
+  </footer>
+
+  <div class="ok">Step 1 ✓ index.html çalışıyor</div>
+
+  <script>
+    // Footer yılı
+    (function(){var y=document.getElementById('year'); if(y){ y.textContent=new Date().getFullYear(); }})();
+  </script>
+</body>
+</html>
