@@ -6,6 +6,39 @@
   <title>Eren Karaman | Mechanical Engineering Student</title>
   <meta name="description" content="Portfolio of Eren Karaman - Mechanical Engineering student focused on automation and data analysis. Includes projects, SolidWorks gallery, and blog." />
   <link rel="stylesheet" href="./css/style.css" />
+
+  <style>
+    /* Currently section scrollable */
+    .currently-list {
+      max-height: 200px;
+      overflow-y: auto;
+      padding-right: 8px;
+      margin: 0;
+    }
+
+    .currently-list li {
+      background: var(--card-bg, #111821);
+      padding: 10px 14px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      line-height: 1.4;
+      list-style: disc;
+      list-style-position: inside;
+    }
+
+    .currently-list::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .currently-list::-webkit-scrollbar-thumb {
+      background: var(--accent, #00aaff);
+      border-radius: 4px;
+    }
+
+    .currently-list::-webkit-scrollbar-thumb:hover {
+      background: var(--accent-2, #0088cc);
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -67,12 +100,12 @@
         </div>
         <div>
           <h2>Currently</h2>
-          <ul>
-            <li>🎓 Completing my senior year in Mechanical Engineering.</li>
-            <li>⚙️ Developing an AI-assisted bulletproof vest prototype for TÜBİTAK 2209.</li>
-            <li>📊 Learning Python for data analysis & automation projects.</li>
-            <li>🔧 Expanding skills in PLC programming and SolidWorks.</li>
-            <li>🌍 Preparing for TOEFL and aiming for a master's in the Netherlands.</li>
+          <ul class="currently-list">
+            <li>Completing my senior year in Mechanical Engineering.</li>
+            <li>Developing an AI-assisted bulletproof vest prototype for TÜBİTAK 2209.</li>
+            <li>Learning Python for data analysis & automation projects.</li>
+            <li>Expanding skills in PLC programming and SolidWorks.</li>
+            <li>Preparing for TOEFL and aiming for a master's in the Netherlands.</li>
           </ul>
         </div>
       </div>
@@ -183,26 +216,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
