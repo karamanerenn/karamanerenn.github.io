@@ -96,35 +96,37 @@
 
     <!-- Contact -->
     <section id="contact" class="section">
-      <div class="container grid two">
-        <div>
-          <h2>Contact</h2>
-          <p class="muted">We’ll wire a working form later. For now, reach out via email or LinkedIn.</p>
-          <!-- İstersen Formspree ekleriz -->
-        </div>
-        <div>
-          <div class="card">
-            <h3 class="card-title">Links</h3>
-            <ul class="list" style="margin:0 0 0 1.1rem">
-              <li><a href="https://github.com/karamanerenn" target="_blank" rel="noopener">GitHub</a></li>
-              <!-- LinkedIn adresin varsa buraya koy -->
-              <li><a href="assets/docs/resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>You can reach me through the form below or directly via the links provided.</p>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> Eren Karaman. All rights reserved.</div>
-  </footer>
+    <!-- İletişim Bilgileri -->
+    <div class="contact-info">
+      <p><strong>Email:</strong> erenkaraman@example.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kullaniciadiniz" target="_blank">linkedin.com/in/kullaniciadiniz</a></p>
+    </div>
+
+    <!-- Form -->
+    <form action="https://formspree.io/f/ABCXYZ" method="POST" class="contact-form">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="_replyto" placeholder="Your email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
 
   <!-- Dış JS (göreli yol) -->
   <script src="./js/main.js"></script>
 </body>
 </html>
+
 
 
 
