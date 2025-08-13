@@ -4,24 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Data Center Waste Heat Recovery – Project</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
 
+<!-- Header -->
 <header class="site-header">
   <div class="container header-inner">
-    <a class="logo" href="../">EK</a>
+    <a class="logo" href="/">EK</a>
     <nav class="nav" id="nav">
-      <a href="../#about">About</a>
-      <a href="./">Projects</a>
-      <a href="../solidworks.html">SolidWorks</a>
-      <a href="/assets/docs/resume.pdf" target="_blank" rel="noopener" class="resume">CV</a>
+      <a href="/#about">About</a>
+      <a href="/projects/">Projects</a>
+      <a href="/solidworks.html">SolidWorks</a>
       <a href="/blog/">Blog</a>
-      <a href="../#contact">Contact</a>
+      <a href="/assets/docs/resume.pdf" target="_blank" rel="noopener" class="resume">CV</a>
+      <a href="/#contact">Contact</a>
     </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open Menu">☰</button>
   </div>
 </header>
 
+<!-- Content -->
 <main class="section">
   <div class="container">
     <h1>Data Center Waste Heat Recovery</h1>
@@ -29,9 +32,11 @@
       <strong>Role:</strong> Thermal system designer —
       <strong>Tech:</strong> LMTD method, plate heat exchanger, SolidWorks, thermal analysis
     </p>
-    <img src="../assets/img/placeholder.png" alt="Project image" class="hero-img" />
+    <img src="/assets/img/placeholder.png" alt="Project image" class="hero-img" />
+
     <h2>Overview</h2>
     <p>This project focuses on recovering waste heat generated in data centers using a counter-flow plate heat exchanger system.</p>
+
     <h2>My Contributions</h2>
     <ul>
       <li>Heat transfer calculations (LMTD)</li>
@@ -39,17 +44,37 @@
       <li>Reynolds & Nusselt numbers for turbulent flow</li>
       <li>System layout in SolidWorks</li>
     </ul>
+
     <h2>Results</h2>
     <p>~78% energy recovery; suitable for space heating or hot water, reducing operational costs.</p>
+
+    <p><a class="btn" href="/projects/">← Back to Projects</a></p>
   </div>
 </main>
 
+<!-- Footer -->
 <footer class="site-footer">
-  <div class="container">© <span id="year"></span> Eren Karaman.</div>
+  <div class="container footer-row">
+    <p class="footer-copy">© <span id="year"></span> Eren Karaman. All rights reserved.</p>
+
+    <p class="with-icon social">
+      <a class="with-icon social-link github" href="https://github.com/karamanerenn" target="_blank" rel="noopener" title="GitHub">
+        <span>GitHub</span>
+      </a>
+      <a class="with-icon social-link linkedin" href="https://www.linkedin.com/in/erkaramann" target="_blank" rel="noopener" title="LinkedIn">
+        <span>LinkedIn</span>
+      </a>
+    </p>
+  </div>
 </footer>
-<script src="../js/main.js"></script>
+
+<!-- Back to Top -->
+<button id="toTopBtn" aria-label="Back to top" title="Back to top">↑</button>
+
+<script src="/js/main.js"></script>
 </body>
 </html>
+
 
 
 
