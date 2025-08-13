@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Eren Karaman | Mechanical Engineering student</title>
   <meta name="description" content="Dark, modern portfolio with projects, SolidWorks gallery, and blog." />
-  <!-- Dış CSS (göreli yol) -->
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header (değiştirmeden bıraktım) -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#">EK</a>
@@ -69,7 +68,7 @@
       </div>
     </section>
 
-    <!-- Projects (6. adım: kartlar proje sayfalarına bağlı) -->
+    <!-- Projects -->
     <section id="projects" class="section">
       <div class="container">
         <h2>Featured Projects</h2>
@@ -94,107 +93,89 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    
-<section id="contact" class="section">
-  <div class="container">
-    <h2>Contact Me</h2>
-    <p>You can reach me through the form below or directly via the links provided.</p>
+    <!-- Contact (tek ve doğru yapı) -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>You can reach me through the form below or directly via the links provided.</p>
 
-    <div class="contact-info">
-      <p class="with-icon">
-        <span class="icon" aria-hidden="true">
-          <!-- Mail icon -->
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M1.5 8.67v8.58A2.25 2.25 0 0 0 3.75 19.5h16.5A2.25 2.25 0 0 0 22.5 17.25V8.67l-9.3 5.58a2.25 2.25 0 0 1-2.4 0L1.5 8.67Z"/>
-            <path d="M21.375 6.75H2.625a1.125 1.125 0 0 0-.97 1.69l9.06 5.43a1.875 1.875 0 0 0 1.97 0l9.06-5.43a1.125 1.125 0 0 0-.97-1.69Z"/>
-          </svg>
-        </span>
-        <strong>Email:</strong>
-        <a href="mailto:karamanerenn@gmail.com">karamanerenn@gmail.com</a>
-      </p>
+        <div class="contact-info">
+          <p class="with-icon">
+            <span class="icon" aria-hidden="true">
+              <!-- Mail icon -->
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M1.5 8.67v8.58A2.25 2.25 0 0 0 3.75 19.5h16.5A2.25 2.25 0 0 0 22.5 17.25V8.67l-9.3 5.58a2.25 2.25 0 0 1-2.4 0L1.5 8.67Z"/>
+                <path d="M21.375 6.75H2.625a1.125 1.125 0 0 0-.97 1.69l9.06 5.43a1.875 1.875 0 0 0 1.97 0l9.06-5.43a1.125 1.125 0 0 0-.97-1.69Z"/>
+              </svg>
+            </span>
+            <strong>Email:</strong>
+            <a href="mailto:karamanerenn@gmail.com">karamanerenn@gmail.com</a>
+          </p>
 
-      <p class="with-icon">
-        <span class="icon" aria-hidden="true">
-          <!-- LinkedIn icon -->
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9h3.96v12H3zM14.54 9c-2.14 0-3.11 1.17-3.64 1.99V9H7v12h3.9v-6.45c0-1.71.74-2.72 2.16-2.72 1.28 0 1.94.9 1.94 2.72V21H19V14.3C19 11.15 17.32 9 14.54 9z"/>
-          </svg>
-        </span>
-        <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/erkaramann" target="_blank" rel="noopener">linkedin.com/in/erkaramann</a>
+          <p class="with-icon">
+            <span class="icon" aria-hidden="true">
+              <!-- LinkedIn icon -->
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9h3.96v12H3zM14.54 9c-2.14 0-3.11 1.17-3.64 1.99V9H7v12h3.9v-6.45c0-1.71.74-2.72 2.16-2.72 1.28 0 1.94.9 1.94 2.72V21H19V14.3C19 11.15 17.32 9 14.54 9z"/>
+              </svg>
+            </span>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/erkaramann" target="_blank" rel="noopener">linkedin.com/in/erkaramann</a>
+          </p>
+        </div>
+
+        <form action="https://formspree.io/f/xrbljvre" method="POST" class="contact-form" id="contactForm">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+          <input type="hidden" name="_subject" value="Portfolio Contact">
+          <button type="submit">Send Message</button>
+          <p class="muted" id="formStatus" style="margin:0.5rem 0 0;"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p class="footer-copy">© <span id="year"></span> Eren Karaman. All rights reserved.</p>
+      <p class="with-icon social">
+        <a class="with-icon" href="https://github.com/karamanerenn" target="_blank" rel="noopener" title="GitHub">
+          <span class="icon" aria-hidden="true">
+            <!-- GitHub icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.51 2.87 8.33 6.85 9.68.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.11-1.48-1.11-1.48-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06 .9 1.58 2.36 1.12 2.94.85 .09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.1 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .85-.28 2.77 1.04a9.37 9.37 0 0 1 5.04 0c1.92-1.32 2.77-1.04 2.77-1.04 .55 1.42.2 2.47.1 2.73 .64.71 1.03 1.62 1.03 2.74 0 3.97-2.34 4.84-4.57 5.09 .36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.06 10.06 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
+            </svg>
+          </span>
+          <span>GitHub</span>
+        </a>
+
+        <a class="with-icon" href="https://www.linkedin.com/in/erkaramann" target="_blank" rel="noopener" title="LinkedIn">
+          <span class="icon" aria-hidden="true">
+            <!-- LinkedIn icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9h3.96v12H3zM14.54 9c-2.14 0-3.11 1.17-3.64 1.99V9H7v12h3.9v-6.45c0-1.71.74-2.72 2.16-2.72 1.28 0 1.94.9 1.94 2.72V21H19V14.3C19 11.15 17.32 9 14.54 9z"/>
+            </svg>
+          </span>
+          <span>LinkedIn</span>
+        </a>
       </p>
     </div>
+  </footer>
 
-    <form action="https://formspree.io/f/xrbljvre" method="POST" class="contact-form" id="contactForm">
-      <label for="name">Your Name</label>
-      <input type="text" id="name" name="name" placeholder="Your name" required>
-
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" placeholder="your@email.com" required>
-
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-
-      <input type="hidden" name="_subject" value="Portfolio Contact">
-      <button type="submit">Send Message</button>
-      <p class="muted" id="formStatus" style="margin:0.5rem 0 0;"></p>
-    </form>
-  </div>
-</section>
-
-    <!-- Form -->
-
-  <form action="https://formspree.io/f/xrbljvre" method="POST" class="contact-form" id="contactForm">
-  <label for="name">Your Name</label>
-  <input type="text" id="name" name="name" placeholder="Your name" required>
-
-  <label for="email">Your Email</label>
-  <input type="email" id="email" name="email" placeholder="your@email.com" required>
-
-  <label for="message">Your Message</label>
-  <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
-
-  <!-- opsiyonel: konu satırı -->
-  <input type="hidden" name="_subject" value="Portfolio Contact">
-
-  <button type="submit">Send Message</button>
-  <p class="muted" id="formStatus" style="margin:0.5rem 0 0;"></p>
-    </form> 
-  </div>
-</section>
-
-  <!-- Dış JS (göreli yol) -->
+  <!-- JS -->
   <script src="./js/main.js"></script>
-    <footer class="site-footer">
-  <div class="container footer-row">
-    <p class="footer-copy">© <span id="year"></span> Eren Karaman. All rights reserved.</p>
-    <p class="with-icon social">
-      <a class="with-icon" href="https://github.com/karamanerenn" target="_blank" rel="noopener" title="GitHub">
-        <span class="icon" aria-hidden="true">
-          <!-- GitHub icon -->
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.51 2.87 8.33 6.85 9.68.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.11-1.48-1.11-1.48-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06 .9 1.58 2.36 1.12 2.94.85 .09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.1 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .85-.28 2.77 1.04a9.37 9.37 0 0 1 5.04 0c1.92-1.32 2.77-1.04 2.77-1.04 .55 1.42.2 2.47.1 2.73 .64.71 1.03 1.62 1.03 2.74 0 3.97-2.34 4.84-4.57 5.09 .36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.06 10.06 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
-          </svg>
-        </span>
-        <span>GitHub</span>
-      </a>
-
-      <a class="with-icon" href="https://www.linkedin.com/in/erkaramann" target="_blank" rel="noopener" title="LinkedIn">
-        <span class="icon" aria-hidden="true">
-          <!-- LinkedIn icon -->
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9h3.96v12H3zM14.54 9c-2.14 0-3.11 1.17-3.64 1.99V9H7v12h3.9v-6.45c0-1.71.74-2.72 2.16-2.72 1.28 0 1.94.9 1.94 2.72V21H19V14.3C19 11.15 17.32 9 14.54 9z"/>
-          </svg>
-        </span>
-        <span>LinkedIn</span>
-      </a>
-    </p>
-  </div>
-</footer>
-
 </body>
 </html>
+
+
 
 
 
