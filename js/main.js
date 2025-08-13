@@ -52,8 +52,11 @@ if (header){
   window.addEventListener('scroll', onScroll, {passive:true});
 }
 
-// Footer yılını otomatik olarak ayarla
-document.getElementById('year').textContent = new Date().getFullYear();
+
+// Footer yılı
+document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
+
+
 
 
 
