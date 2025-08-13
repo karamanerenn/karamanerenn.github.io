@@ -115,6 +115,38 @@ a:hover{opacity:.9}
 .contact-form button:hover {
   background: #64b5f6;
 }
+/* ===== Header polish ===== */
+.site-header{
+  position: sticky; top:0; z-index:100;
+  background: rgba(11,15,20,.6);
+  backdrop-filter: saturate(160%) blur(8px);
+  border-bottom: 1px solid var(--border);
+  transition: box-shadow .25s ease, background .25s ease, border-color .25s ease;
+}
+.site-header.scrolled{
+  background: rgba(11,15,20,.8);
+  box-shadow: 0 6px 24px rgba(0,0,0,.35);
+  border-color: #263241;
+}
+
+/* Nav link micro-interaction */
+.nav a{
+  position: relative;
+  overflow: hidden;
+}
+.nav a::after{
+  content:"";
+  position:absolute; left:8px; right:8px; bottom:6px; height:2px;
+  background: linear-gradient(90deg,var(--accent),var(--accent-2));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .25s ease;
+  opacity:.9;
+}
+.nav a:hover::after, .nav a[aria-current="page"]::after{
+  transform: scaleX(1);
+}
+
 
 
 
