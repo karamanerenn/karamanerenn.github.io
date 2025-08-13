@@ -56,6 +56,22 @@ if (header){
 // Footer yılı
 document.getElementById('year') && (document.getElementById('year').textContent = new Date().getFullYear());
 
+// Back to Top button: show/hide + smooth scroll
+const toTopBtn = document.getElementById('toTopBtn');
+if (toTopBtn){
+  const toggleTop = () => {
+    toTopBtn.style.display = window.scrollY > 300 ? 'inline-flex' : 'none';
+  };
+  toggleTop();
+  window.addEventListener('scroll', toggleTop, { passive: true });
+
+  toTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
+
+
 
 
 
