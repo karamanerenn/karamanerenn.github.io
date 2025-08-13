@@ -259,6 +259,47 @@ a:hover{opacity:.9}
 }
 #contact.section{ padding-bottom: 3rem; }
 
+/* ===== Hero layout: image + text side-by-side ===== */
+.hero .container.hero-grid{
+  display: grid;
+  gap: 1.5rem;
+}
+@media (min-width: 900px){
+  .hero .container.hero-grid{
+    grid-template-columns: 1.1fr .9fr;
+    align-items: center;
+  }
+}
+.hero-copy{ display:grid; gap:1rem; }
+
+/* ===== Avatar styles ===== */
+.avatar-wrap{
+  position: relative;
+  width: clamp(160px, 28vw, 280px);
+  height: clamp(160px, 28vw, 280px);
+  margin: 0 auto;  /* küçük ekranda ortala */
+}
+.avatar{
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid var(--border);
+  box-shadow: 0 18px 40px rgba(0,0,0,.45);
+  background: #0f172a;
+}
+.avatar-ring{
+  position:absolute; inset:-6px;
+  border-radius:50%;
+  background: conic-gradient(from 140deg, var(--accent), var(--accent-2), transparent 60%);
+  filter: blur(18px); opacity:.35; z-index:-1;
+}
+
+/* küçük bir hover parlatma */
+.avatar-wrap:hover .avatar{ filter: saturate(112%); }
+
+
+
 
 
 
