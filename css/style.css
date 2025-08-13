@@ -57,3 +57,21 @@ a:hover{opacity:.9}
 
 /* Footer */
 .site-footer{border-top:1px solid var(--border);padding:2rem 0;color:var(--muted)}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  margin: 0.25rem 0;
+}
+
+.contact-info a {
+  color: #90caf9;
+}
+
+.contact-info a:hover {
+  color: #64b5f6;
+}
+
+
