@@ -232,10 +232,10 @@ a:hover{opacity:.9}
 }
 .icon{
   width:18px; height:18px; display:inline-block; line-height:0;
-  color:#90caf9; /* ikon rengi */
+  color:#90caf9;
 }
 .icon svg{ width:100%; height:100%; display:block; }
-.with-icon:hover .icon{ color:#64b5f6; } /* hover rengi */
+.with-icon:hover .icon{ color:#64b5f6; }
 
 /* ===== Footer layout polish ===== */
 .site-footer{
@@ -249,10 +249,8 @@ a:hover{opacity:.9}
 .footer-copy{ margin:0; }
 .footer-row .social{ gap:1rem; margin:0; }
 
-/* ikon boyutu biraz büyük, daha net */
 .icon{ width:20px; height:20px; }
 
-/* küçük ekranlarda ortala */
 @media (max-width: 700px){
   .footer-row{ justify-content:center; text-align:center; }
   .footer-copy{ width:100%; }
@@ -277,7 +275,7 @@ a:hover{opacity:.9}
   position: relative;
   width: clamp(160px, 28vw, 280px);
   height: clamp(160px, 28vw, 280px);
-  margin: 0 auto;  /* küçük ekranda ortala */
+  margin: 0 auto;
 }
 .avatar{
   width: 100%; height: 100%;
@@ -295,8 +293,8 @@ a:hover{opacity:.9}
   filter: blur(18px); opacity:.35; z-index:-1;
 }
 
-/* küçük bir hover parlatma */
 .avatar-wrap:hover .avatar{ filter: saturate(112%); }
+
 /* ===== Footer background & layout ===== */
 .site-footer{
   margin-top: 2rem;
@@ -311,7 +309,6 @@ a:hover{opacity:.9}
 .footer-copy{ margin:0; }
 .social{ gap:1rem; margin:0; }
 
-/* ===== Social links polish ===== */
 .social-link{
   padding:.5rem .7rem;
   border:1px solid var(--border);
@@ -328,16 +325,13 @@ a:hover{opacity:.9}
 .social-link.linkedin{ color:#a7c7ff; }
 .social-link.linkedin:hover{ color:#cfe0ff; }
 
-/* ikon boyutu */
 .icon{ width:20px; height:20px; }
 
-/* küçük ekranda ortala */
 @media (max-width: 700px){
   .footer-row{ justify-content:center; text-align:center; }
   .footer-copy{ width:100%; }
 }
 
-/* ===== Back to Top button ===== */
 #toTopBtn{
   position: fixed;
   right: 20px; bottom: 22px;
@@ -349,22 +343,21 @@ a:hover{opacity:.9}
   font-weight:800;
   cursor:pointer;
   box-shadow: 0 10px 30px rgba(0,0,0,.4);
-  display:none; /* JS ile görünür olacak */
+  display:none;
   z-index: 200;
 }
 #toTopBtn:hover{ opacity:.95; }
-/* Footer: geniş ekranda tek satırda kalsın */
+
 @media (min-width: 800px){
   .footer-row{
-    flex-wrap: nowrap;              /* tek satır */
-    justify-content: space-between; /* sağa-sola yay */
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
   }
   .footer-copy{ margin:0; }
   .social{ display:flex; gap:1rem; margin:0; }
 }
 
-/* Menü butonu: masaüstünde gizle, küçük ekranda göster */
 .menu-btn{ display:none; }
 @media (max-width: 760px){
   .menu-btn{ display:inline-flex; }
@@ -379,10 +372,10 @@ body {
 main {
   flex: 1;
 }
-/* Footer her zaman altta */
 html, body { height: 100%; }
 body { display:flex; flex-direction:column; min-height:100vh; }
 main { flex:1; }
+
 /* ===== Currently Section - Modern Style ===== */
 #about .grid.two {
   gap: 2rem;
@@ -399,7 +392,7 @@ main { flex:1; }
 }
 
 #about h2::before {
-  content: "📌";
+  content: "";
   font-size: 1.3rem;
 }
 
@@ -429,52 +422,26 @@ main { flex:1; }
   transition: transform 0.25s ease, background 0.3s ease, border-color 0.3s ease;
 }
 
-/* Hover efekti - hafif kaldırma ve renk parlama */
 #about ul li:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.04);
   border-color: var(--accent);
 }
 
-/* Emoji veya ikon solda */
 #about ul li::before {
-  content: "✨";
+  content: "";
   font-size: 1.1rem;
   flex-shrink: 0;
 }
 
-/* Özel emoji eşleşmeleri */
-#about ul li:nth-child(1)::before { content: "⚙️"; }
-#about ul li:nth-child(2)::before { content: "📚"; }
-#about ul li:nth-child(3)::before { content: "💻"; }
-#about ul li:nth-child(4)::before { content: "🚀"; }
-#about ul li:nth-child(5)::before { content: "🎯"; }
+#about ul li:nth-child(1)::before { content: ""; }
+#about ul li:nth-child(2)::before { content: ""; }
+#about ul li:nth-child(3)::before { content: ""; }
+#about ul li:nth-child(4)::before { content: ""; }
+#about ul li:nth-child(5)::before { content: ""; }
 
-/* Mobile uyumu */
 @media (max-width: 768px) {
   #about .grid.two {
     grid-template-columns: 1fr;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
