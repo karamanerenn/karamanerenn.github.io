@@ -95,30 +95,53 @@
     </section>
 
     <!-- Contact -->
-    <div class="contact-info">
-  <p class="with-icon">
-    <span class="icon" aria-hidden="true">
-      <!-- Mail icon -->
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M1.5 8.67v8.58A2.25 2.25 0 0 0 3.75 19.5h16.5A2.25 2.25 0 0 0 22.5 17.25V8.67l-9.3 5.58a2.25 2.25 0 0 1-2.4 0L1.5 8.67Z"/>
-        <path d="M21.375 6.75H2.625a1.125 1.125 0 0 0-.97 1.69l9.06 5.43a1.875 1.875 0 0 0 1.97 0l9.06-5.43a1.125 1.125 0 0 0-.97-1.69Z"/>
-      </svg>
-    </span>
-    <strong>Email:</strong>
-    <a href="mailto:karamanerenn@gmail.com">karamanerenn@gmail.com</a>
-  </p>
+    
+<section id="contact" class="section">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>You can reach me through the form below or directly via the links provided.</p>
 
-  <p class="with-icon">
-    <span class="icon" aria-hidden="true">
-      <!-- LinkedIn icon -->
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9h3.96v12H3zM14.54 9c-2.14 0-3.11 1.17-3.64 1.99V9H7v12h3.9v-6.45c0-1.71.74-2.72 2.16-2.72 1.28 0 1.94.9 1.94 2.72V21H19V14.3C19 11.15 17.32 9 14.54 9z"/>
-      </svg>
-    </span>
-    <strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/erkaramann" target="_blank" rel="noopener">linkedin.com/in/erkaramann</a>
-  </p>
-</div>
+    <div class="contact-info">
+      <p class="with-icon">
+        <span class="icon" aria-hidden="true">
+          <!-- Mail icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M1.5 8.67v8.58A2.25 2.25 0 0 0 3.75 19.5h16.5A2.25 2.25 0 0 0 22.5 17.25V8.67l-9.3 5.58a2.25 2.25 0 0 1-2.4 0L1.5 8.67Z"/>
+            <path d="M21.375 6.75H2.625a1.125 1.125 0 0 0-.97 1.69l9.06 5.43a1.875 1.875 0 0 0 1.97 0l9.06-5.43a1.125 1.125 0 0 0-.97-1.69Z"/>
+          </svg>
+        </span>
+        <strong>Email:</strong>
+        <a href="mailto:karamanerenn@gmail.com">karamanerenn@gmail.com</a>
+      </p>
+
+      <p class="with-icon">
+        <span class="icon" aria-hidden="true">
+          <!-- LinkedIn icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9h3.96v12H3zM14.54 9c-2.14 0-3.11 1.17-3.64 1.99V9H7v12h3.9v-6.45c0-1.71.74-2.72 2.16-2.72 1.28 0 1.94.9 1.94 2.72V21H19V14.3C19 11.15 17.32 9 14.54 9z"/>
+          </svg>
+        </span>
+        <strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/erkaramann" target="_blank" rel="noopener">linkedin.com/in/erkaramann</a>
+      </p>
+    </div>
+
+    <form action="https://formspree.io/f/xrbljvre" method="POST" class="contact-form" id="contactForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+      <input type="hidden" name="_subject" value="Portfolio Contact">
+      <button type="submit">Send Message</button>
+      <p class="muted" id="formStatus" style="margin:0.5rem 0 0;"></p>
+    </form>
+  </div>
+</section>
 
     <!-- Form -->
 
@@ -172,6 +195,7 @@
 
 </body>
 </html>
+
 
 
 
