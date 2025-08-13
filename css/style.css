@@ -353,6 +353,24 @@ a:hover{opacity:.9}
   z-index: 200;
 }
 #toTopBtn:hover{ opacity:.95; }
+/* Footer: geniş ekranda tek satırda kalsın */
+@media (min-width: 800px){
+  .footer-row{
+    flex-wrap: nowrap;              /* tek satır */
+    justify-content: space-between; /* sağa-sola yay */
+    align-items: center;
+  }
+  .footer-copy{ margin:0; }
+  .social{ display:flex; gap:1rem; margin:0; }
+}
+
+/* Menü butonu: masaüstünde gizle, küçük ekranda göster */
+.menu-btn{ display:none; }
+@media (max-width: 760px){
+  .menu-btn{ display:inline-flex; }
+}
+
+
 
 
 
