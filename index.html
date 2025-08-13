@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eren Karaman | Mechanical Engineering student</title>
-  <meta name="description" content="Dark, modern portfolio with projects, SolidWorks gallery, and blog." />
+  <title>Eren Karaman | Mechanical Engineering Student</title>
+  <meta name="description" content="Portfolio of Eren Karaman - Mechanical Engineering student focused on automation and data analysis. Includes projects, SolidWorks gallery, and blog." />
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
@@ -25,38 +25,63 @@
 
   <main>
     <!-- Hero -->
-   <section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <h1>Hi, I’m <span class="accent">Eren Karaman</span></h1>
-      <p class="subtitle">
-        Mechanical Engineering senior focused on <strong>automation</strong> and <strong>data analysis</strong>.
-        This portfolio showcases my projects and learning journey.
-      </p>
-      <div class="cta-row">
-        <a class="btn primary" href="projects/">View Projects</a>
-        <a class="btn ghost" href="#contact">Get in Touch</a>
-      </div>
-    </div>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Hi, I’m <span class="accent">Eren Karaman</span></h1>
+          <p class="subtitle">
+            Mechanical Engineering senior focused on <strong>automation</strong> and <strong>data analysis</strong>.
+            This portfolio showcases my projects and learning journey.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="projects/">View Projects</a>
+            <a class="btn ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
 
-    <figure class="avatar-wrap">
-      <div class="avatar-ring"></div>
-      <img
-        class="avatar"
-        src="assets/img/avatar.jpg"
-        alt="Portrait of Eren Karaman"
-        width="320" height="320"
-        loading="lazy" decoding="async"
-        onerror="this.src='assets/img/placeholder.png'">
-    </figure>
-  </div>
-</section>
+        <figure class="avatar-wrap">
+          <div class="avatar-ring"></div>
+          <img
+            class="avatar"
+            src="assets/img/avatar.jpg"
+            alt="Portrait of Eren Karaman"
+            width="320" height="320"
+            loading="lazy" decoding="async"
+            onerror="this.src='assets/img/placeholder.png'">
+        </figure>
+      </div>
+    </section>
+
+    <!-- About + Currently -->
+    <section id="about" class="section">
+      <div class="container grid two">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            I am a 4th-year Mechanical Engineering student at Trakya University with a strong interest in automation, data analysis, and mechanical design. 
+            I enjoy combining mechanical engineering with programming and electronics to create innovative solutions.
+          </p>
+          <p>
+            My goal is to become a versatile engineer capable of working in both mechanical and automation fields, contributing to the defense industry in Turkey.
+          </p>
+        </div>
+        <div>
+          <h2>Currently</h2>
+          <ul>
+            <li>🎓 Completing my senior year in Mechanical Engineering.</li>
+            <li>⚙️ Developing an AI-assisted bulletproof vest prototype for TÜBİTAK 2209.</li>
+            <li>📊 Learning Python for data analysis & automation projects.</li>
+            <li>🔧 Expanding skills in PLC programming and SolidWorks.</li>
+            <li>🌍 Preparing for TOEFL and aiming for a master's in the Netherlands.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!-- Projects -->
     <section id="projects" class="section">
       <div class="container">
         <h2>Featured Projects</h2>
-
         <div class="grid two">
           <article class="card">
             <h3>Smart Bulletproof Vest</h3>
@@ -70,7 +95,6 @@
             <a class="btn" href="projects/project-2.html">Details</a>
           </article>
         </div>
-
         <p style="margin-top:1rem">
           <a class="btn" href="projects/">View All Projects</a>
         </p>
@@ -86,7 +110,6 @@
         <div class="contact-info">
           <p class="with-icon">
             <span class="icon" aria-hidden="true">
-              <!-- Mail icon -->
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M1.5 8.67v8.58A2.25 2.25 0 0 0 3.75 19.5h16.5A2.25 2.25 0 0 0 22.5 17.25V8.67l-9.3 5.58a2.25 2.25 0 0 1-2.4 0L1.5 8.67Z"/>
                 <path d="M21.375 6.75H2.625a1.125 1.125 0 0 0-.97 1.69l9.06 5.43a1.875 1.875 0 0 0 1.97 0l9.06-5.43a1.125 1.125 0 0 0-.97-1.69Z"/>
@@ -98,7 +121,6 @@
 
           <p class="with-icon">
             <span class="icon" aria-hidden="true">
-              <!-- LinkedIn icon -->
               <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9h3.96v12H3zM14.54 9c-2.14 0-3.11 1.17-3.64 1.99V9H7v12h3.9v-6.45c0-1.71.74-2.72 2.16-2.72 1.28 0 1.94.9 1.94 2.72V21H19V14.3C19 11.15 17.32 9 14.54 9z"/>
               </svg>
@@ -127,36 +149,32 @@
   </main>
 
   <!-- Footer -->
-    <footer class="site-footer">
-  <div class="container footer-row">
-    <p class="footer-copy">© <span id="year"></span> Eren Karaman. All rights reserved.</p>
-
-    <p class="with-icon social">
-      <a class="with-icon social-link github" href="https://github.com/karamanerenn" target="_blank" rel="noopener" title="GitHub">
-        <span class="icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.51 2.87 8.33 6.85 9.68.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.11-1.48-1.11-1.48-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06 .9 1.58 2.36 1.12 2.94.85 .09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.1 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .85-.28 2.77 1.04a9.37 9.37 0 0 1 5.04 0c1.92-1.32 2.77-1.04 2.77-1.04 .55 1.42.2 2.47.1 2.73 .64.71 1.03 1.62 1.03 2.74 0 3.97-2.34 4.84-4.57 5.09 .36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.06 10.06 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
-          </svg>
-        </span>
-        <span>GitHub</span>
-      </a>
-
-      <a class="with-icon social-link linkedin" href="https://www.linkedin.com/in/erkaramann" target="_blank" rel="noopener" title="LinkedIn">
-        <span class="icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9h3.96v12H3zM14.54 9c-2.14 0-3.11 1.17-3.64 1.99V9H7v12h3.9v-6.45c0-1.71.74-2.72 2.16-2.72 1.28 0 1.94.9 1.94 2.72V21H19V14.3C19 11.15 17.32 9 14.54 9z"/>
-          </svg>
-        </span>
-        <span>LinkedIn</span>
-      </a>
-    </p>
-  </div>
-</footer>
-
-<!-- Back to Top floating button -->
-<button id="toTopBtn" aria-label="Back to top" title="Back to top">↑</button>
-
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p class="footer-copy">© <span id="year"></span> Eren Karaman. All rights reserved.</p>
+      <p class="with-icon social">
+        <a class="with-icon social-link github" href="https://github.com/karamanerenn" target="_blank" rel="noopener" title="GitHub">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.51 2.87 8.33 6.85 9.68.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.37-3.37-1.37-.45-1.17-1.11-1.48-1.11-1.48-.91-.64.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06 .9 1.58 2.36 1.12 2.94.85 .09-.67.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.1 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.31.1-2.73 0 0 .85-.28 2.77 1.04a9.37 9.37 0 0 1 5.04 0c1.92-1.32 2.77-1.04 2.77-1.04 .55 1.42.2 2.47.1 2.73 .64.71 1.03 1.62 1.03 2.74 0 3.97-2.34 4.84-4.57 5.09 .36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.6.69.49A10.06 10.06 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"/>
+            </svg>
+          </span>
+          <span>GitHub</span>
+        </a>
+        <a class="with-icon social-link linkedin" href="https://www.linkedin.com/in/erkaramann" target="_blank" rel="noopener" title="LinkedIn">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M4.98 3.5a2.5 2.5 0 1 0 0 5.001 2.5 2.5 0 0 0 0-5zM3 9h3.96v12H3zM14.54 9c-2.14 0-3.11 1.17-3.64 1.99V9H7v12h3.9v-6.45c0-1.71.74-2.72 2.16-2.72 1.28 0 1.94.9 1.94 2.72V21H19V14.3C19 11.15 17.32 9 14.54 9z"/>
+            </svg>
+          </span>
+          <span>LinkedIn</span>
+        </a>
+      </p>
+    </div>
   </footer>
+
+  <!-- Back to Top floating button -->
+  <button id="toTopBtn" aria-label="Back to top" title="Back to top">↑</button>
 
   <!-- JS -->
   <script src="./js/main.js"></script>
@@ -165,6 +183,7 @@
   </script>
 </body>
 </html>
+
 
 
 
