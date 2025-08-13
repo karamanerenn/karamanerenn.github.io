@@ -370,6 +370,18 @@ a:hover{opacity:.9}
   .menu-btn{ display:inline-flex; }
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+
+
 
 
 
